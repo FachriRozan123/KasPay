@@ -1,0 +1,139 @@
+*, html, body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    display:contents;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+
+.isi{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.namaAwal{
+    color:white;
+}
+
+.namaAkhir{
+    color:purple;
+}
+
+.Merek{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    color: white;
+    padding-right: 18px;
+}
+
+.navigasi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.navigasi > li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.navigasi > li > a:hover{
+    color: red;
+    transition: all .5 ease-in-out;
+}
+
+.navigasi > li > a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    display:flex;
+    height: auto;
+    width: 100%;
+}
+.contentabout{
+    justify-content: center;
+    display:grid;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.content h1{
+    font-size: 20px;
+    color: white;
+}
+.contentabout h1{
+    font-size: 50px;
+    color: white;
+}
+
+.pembungkus{
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+.gambarabout{
+    height: 700px;
+    width: 500px;
+    border-radius: 25px;
+    margin: auto;
+}
+.borderbungkus{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+/* CSS untuk mengubah kelas-kelas Tailwind menjadi CSS */
+.my-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5rem; /* Set ke 10 untuk mengubah dari mt-10 menjadi margin-top: 2.5rem */
+    max-width: 36rem; /* Set ke max-width: 2xl untuk mengubah dari max-w-2xl */
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Set ke grid-cols-1 untuk mengubah dari grid-cols-1 */
+    gap: 2rem 1rem; /* Set ke gap-x-8 dan gap-y-16 */
+    border-top: 1px solid #e2e8f0; /* Set ke border-t dan border-gray-200 */
+    padding-top: 2.5rem; /* Set ke pt-10 untuk mengubah dari pt-10 */
+}
+
+@media (min-width: 640px) {
+    .my-container {
+        margin-top: 4rem; /* Set ke sm:mt-16 untuk mengubah dari sm:mt-16 */
+        padding-top: 4rem; /* Set ke sm:pt-16 untuk mengubah dari sm:pt-16 */
+    }
+}
+
+@media (min-width: 1024px) {
+    .my-container {
+        margin-left: 2.5rem; /* Set ke lg:mx-10 untuk mengubah dari lg:mx-10 */
+        margin-right: 2.5rem; /* Set ke lg:mx-10 untuk mengubah dari lg:mx-10 */
+        max-width: none; /* Set ke lg:max-w-none untuk mengubah dari lg:max-w-none */
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* Set ke lg:grid-cols-3 untuk mengubah dari lg:grid-cols-3 */
+    }
+}
+
+.bg{
+    background-image: url(../img/bg.jpg);
+    background-repeat: repeat-y;
+}
